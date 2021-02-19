@@ -12,6 +12,7 @@ public class TestLog {
 
     @Scheduled(cron = "*/2 * * * * *")
     public void loopPrinting(){
+        System.out.println("将要打日志");
         logger.error("error");
         logger.warn("warn");
         logger.info("info");
